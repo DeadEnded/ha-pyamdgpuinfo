@@ -1,0 +1,1 @@
+"""The ha-pyamdgpuinfo component."""
