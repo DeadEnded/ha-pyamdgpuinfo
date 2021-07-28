@@ -1,0 +1,11 @@
+{
+    "domain": "ha-pyamdgpuinfo",
+    "name": "AMD GPU Info",
+    "version": "0.1",
+    "documentation": "https://github.com/DeadEnded/ha-pyamdgpuinfo",
+    "issue_tracker": "https://github.com/DeadEnded/ha-pyamdgpuinfo/issues",
+    "requirements": ["pyamdgpuinfo"],
+    "dependencies": [],
+    "codeowners": ["@deadended"],
+    "config_flow": false
+}  
