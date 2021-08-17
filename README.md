@@ -32,6 +32,18 @@ Add the following as a custom component in HACS:
 
 `https://github.com/DeadEnded/ha-pyamdgpuinfo`
 
+### Custom Wheel Installation
+
+The pyamdgpuinfo python package is not pre-built in a wheel that Home Assistant supports.<br>
+SO - after pulling the custom component, you will need to install the wheel from this repo:<br>
+
+```
+pip install https://github.com/DeadEnded/ha-pyamdgpuinfo/raw/main/wheels/pyamdgpuinfo-2.1.1-cp39-cp39-linux_x86_64.whl
+```
+Once the wheel is installed, and the custom component is copied, update your `configuration.yaml` and restart your container!
+
+***NOTE: Since this wheel is custom, it will need to be re-installed on every container rebuild (not restart, just rebuild)***
+
 ## Usage
 Add the following entry in your `configuration.yaml`:
 
