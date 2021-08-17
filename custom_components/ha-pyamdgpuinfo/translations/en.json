@@ -2,11 +2,24 @@
     "config": {
         "step": {
             "user": {
-                "description": "Select the AMD GPU Sensors you would like to add."
+                "title": "Select AMD GPU Sensors to add",
+                "data": {
+                    "resources": "Choose Sensor Resources"
+                }
             }
         },
         "abort": {
             "single_instance_allowed": "Already configured. Only a single configuration possible."
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "Change AMD GPU Sensor selection",
+                "data": {
+                    "resources": "Choose Sensor Resources"
+                }
+            }
         }
     }
 }
