@@ -24,17 +24,12 @@ from .const import (
 _LOGGER = logging.getLogger(__name__)
 
 
-# # Validation of the user's configuration
-# PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
-#     {
-#         vol.Optional(CONF_RESOURCES, default=[]): vol.All(
-#             cv.ensure_list, [vol.In(SENSOR_TYPES)]
-#         ),
-#     }
-# )
-
-# Define the GPU index to be queried
+# Define the GPU index to be queried and Device attributes
 first_gpu = pyamdgpuinfo.get_gpu(0)
+DEVICE_ID = first_gpu.gpu_id
+MANUFACTURER = "AMD"
+MODEL = first_gpu.name
+NAME = first_gpu.path
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
