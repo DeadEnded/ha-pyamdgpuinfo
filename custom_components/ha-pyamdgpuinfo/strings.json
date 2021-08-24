@@ -1,0 +1,25 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "[%key:common::config_flow::title%]",
+                "data": {
+                    "resources": "[%key:common::config_flow::data::resources%]"
+                }
+            }
+        },
+        "abort": {
+            "single_instance_allowed": "[%key:common::config_flow::abort::single_instance_allowed%]"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "[%key:common::config_flow::title%]",
+                "data": {
+                    "resources": "[%key:common::config_flow::data::resources%]"
+                }
+            }
+        }
+    }
+}
