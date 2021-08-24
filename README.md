@@ -41,7 +41,7 @@ After you have added the custom repository you should see it as a new repository
 
 
 ## Usage
-Once the custom integration and pyamdgpuinfo wheel have been installed, you can install the component from the `Configuration - Integrations` screen:<br>
+Once the custom integration has been installed, you can install the component from the `Configuration - Integrations` screen:<br>
 Add a new integration, and search for `AMD`:
 
 ![image](https://github.com/DeadEnded/ha-pyamdgpuinfo/raw/config-flow/images/Add-Integration.png)
