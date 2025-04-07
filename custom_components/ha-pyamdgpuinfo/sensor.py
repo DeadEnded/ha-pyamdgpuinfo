@@ -117,8 +117,14 @@ class AMDGPUSensor(SensorEntity):
         return self._available
 
     def update(self):
-        """Get the latest system information."""
+        """Check that polling has initialized before running updates."""
+        try:
+            first_gpu.query_utilisation()
+        except RuntimeError as e:
+            _LOGGER.debug("An error has occurred: {e}")
+            return
 
+        """Get the latest system information."""
         if self.type == "gpu_temperature":
             self._state = first_gpu.query_temperature()
         elif self.type == "vram_size":
