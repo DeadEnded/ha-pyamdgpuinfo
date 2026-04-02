@@ -1,7 +1,7 @@
 {
     "domain": "ha_pyamdgpuinfo",
     "name": "AMD GPU Info",
-    "version": "1.03",
+    "version": "1.04",
     "documentation": "https://github.com/DeadEnded/ha-pyamdgpuinfo",
     "issue_tracker": "https://github.com/DeadEnded/ha-pyamdgpuinfo/issues",
     "requirements": ["pyamdgpuinfo"],
